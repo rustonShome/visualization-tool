@@ -740,7 +740,7 @@ export default class DequeArray extends Algorithm {
 		this.commands = [];
 		this.cmd(act.setText, this.leftoverLabelID, '');
 
-		for (let i = 0; i < SIZE; i++) {
+		for (let i = 0; i < this.size; i++) {
 			this.cmd(act.setText, this.arrayID[i], '');
 		}
 		this.front = 0;
